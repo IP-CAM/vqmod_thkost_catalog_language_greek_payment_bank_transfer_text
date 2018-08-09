@@ -1,0 +1,2 @@
+# vqmod_thkost_catalog_language_greek_payment_bank_transfer_text
+Bank Trasnfer payment text
