@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification
+	xmlns="https://github.com/vqmod/vqmod"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://github.com/vqmod/vqmod https://raw.githubusercontent.com/vqmod/vqmod/master/vqmod.xsd">
+	>
+	<id><![CDATA[[VQMOD] Changed Bank Transfer text_payment]]></id>
+	<version>1.0.0</version>
+	<vqmver>2.6.3</vqmver>
+	<author>Digital4u dev@digital4u.gr</author>
+	<file path="catalog/language/greek/payment/" name="bank_transfer.php" error="log">
+		<operation error="skip">
+			<search position="replace"><![CDATA[$_['text_payment']              = 'Η παραγγελία σας δε θα αποσταλεί μέχρι να λάβουμε την πληρωμή σας.';]]></search>
+			<add><![CDATA[
+// thkost: thkost_catalog_language_greek_payment_bank_transfer_text.xml (start) <<
+$_['text_payment']              = '';
+// thkost: thkost_catalog_language_greek_payment_bank_transfer_text.xml (end) <<
+			]]></add>
+		</operation>
+	</file>
+</modification>
