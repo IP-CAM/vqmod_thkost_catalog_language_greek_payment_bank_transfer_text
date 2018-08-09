@@ -10,10 +10,18 @@
 	<author>Digital4u dev@digital4u.gr</author>
 	<file path="catalog/language/greek/payment/" name="bank_transfer.php" error="log">
 		<operation error="skip">
-			<search position="replace"><![CDATA[$_['text_payment']              = 'Η παραγγελία σας δε θα αποσταλεί μέχρι να λάβουμε την πληρωμή σας.';]]></search>
+			<search position="replace"><![CDATA[$_['text_description']          = 'Παρακαλώ καταθέστε το συνολικό ποσό πληρωμής στον ακόλουθο τραπεζικό λογαριασμό.';]]></search>
 			<add><![CDATA[
 // thkost: thkost_catalog_language_greek_payment_bank_transfer_text.xml (start) <<
-$_['text_payment']              = '';
+$_['text_description']          = '<!-- Παρακαλώ καταθέστε το συνολικό ποσό πληρωμής στον ακόλουθο τραπεζικό λογαριασμό. -->';
+// thkost: thkost_catalog_language_greek_payment_bank_transfer_text.xml (end) <<
+			]]></add>
+		</operation>
+		<operation error="skip">
+			<search position="replace"><![CDATA[$_['text_payment']              = 'Η παραγγελία σας θα αποσταλεί μόλις λάβουμε την πληρωμή σας.';]]></search>
+			<add><![CDATA[
+// thkost: thkost_catalog_language_greek_payment_bank_transfer_text.xml (start) <<
+$_['text_payment']              = '<!-- Η παραγγελία σας θα αποσταλεί μόλις λάβουμε την πληρωμή σας. -->';
 // thkost: thkost_catalog_language_greek_payment_bank_transfer_text.xml (end) <<
 			]]></add>
 		</operation>
